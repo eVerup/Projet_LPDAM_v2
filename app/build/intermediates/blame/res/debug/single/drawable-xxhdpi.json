@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_delivery_truck_front.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/drawable-xxhdpi/ic_delivery_truck_front.png"
+    },
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_camaro.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/drawable-xxhdpi/ic_camaro.png"
+    },
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_beetle_car_front.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/drawable-xxhdpi/ic_beetle_car_front.png"
+    },
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_rolls_royce_luxury_car_front.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/drawable-xxhdpi/ic_rolls_royce_luxury_car_front.png"
+    }
+]

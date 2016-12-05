@@ -3,6 +3,7 @@ package com.example.lucasabadie.projetandroidtp;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.media.MediaPlayer;
@@ -14,7 +15,11 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Random;
+
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
 
 /**
  * Created by Lucas Abadie on 31/10/2016.
@@ -192,6 +197,14 @@ public class CustomView extends View implements View.OnTouchListener {
                                     mMP.pause();
                                     v.cancel();
                                     bIsReload = true;
+
+                                    SharedPreferences pref = getContext().getSharedPreferences("td4", Context.MODE_PRIVATE);
+
+                                    SharedPreferences.Editor editor = pref.edit();
+
+                                    editor.putLong("timestart", new Date().getTime());
+
+                                    editor.commit();
                                 }
                             })
                             .setNegativeButton("No, I wanna leave", new DialogInterface.OnClickListener() {
@@ -206,6 +219,37 @@ public class CustomView extends View implements View.OnTouchListener {
                     builder.create();
 
                     builder.show();
+
+                    // Fin
+
+                    SharedPreferences pref = getContext().getSharedPreferences("td4", Context.MODE_PRIVATE);
+
+                    long timestart = pref.getLong("timestart",0);
+                    long timeend = new Date().getTime();
+
+                    Log.d("test","start : "+timestart);
+                    Log.d("test","end : "+timeend);
+
+                    double tempsdiff = Double.valueOf((timeend - timestart) / 1000.0);
+
+                    Log.d("test","temps diff : "+tempsdiff);
+
+                    RealmConfiguration config2 = new RealmConfiguration.Builder(getContext())
+                            .name("td4")
+                            .schemaVersion(3)
+                            .deleteRealmIfMigrationNeeded()
+                            .build();
+
+
+                    Realm realm = Realm.getInstance(config2);
+
+                    realm.beginTransaction();
+
+                    Score score = realm.createObject(Score.class);
+                    score.setDate(new Date());
+                    score.setScore(tempsdiff);
+
+                    realm.commitTransaction();
                 }
 
                 return true;

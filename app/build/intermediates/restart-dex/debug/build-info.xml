@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="hdpi"
-    format="7"
-    timestamp="8238581906797"
-    token="9214394542931763124" >
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="4951698710035"
+    token="-6512466882778962515"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="1377" />
+        duration="337" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="1092" />
     <task
         name="instant-run-transform"
-        duration="1469" />
+        duration="50" />
     <task
         name="verifier"
-        duration="1132" />
+        duration="3" />
 
     <artifact
-        location="H:\ProjetAndroidTP\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="8238581906797" >
+    <build
+        timestamp="4911137676335"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="H:\ProjetAndroidTP\app\build\outputs\apk\app-debug.apk"
+            location="/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="4951698710035"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

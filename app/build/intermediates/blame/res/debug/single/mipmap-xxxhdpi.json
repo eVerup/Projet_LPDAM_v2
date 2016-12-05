@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_logo.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/mipmap-xxxhdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/Julien/AndroidStudioProjects/ProjetAndroidTP/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

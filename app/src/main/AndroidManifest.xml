@@ -2,17 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lucasabadie.projetandroidtp">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:largeHeap="true"
-        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
         android:label="Search the Intruder"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.lucasabadie.projetandroidtp.Activity_Accueil"
+        <activity
+            android:name=".Activity_Accueil"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Activity_Game"
-            android:screenOrientation="portrait">
-
-        </activity>
+        <activity
+            android:name=".Activity_Game"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity_Score"></activity>
     </application>
 
 </manifest>
