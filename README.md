@@ -14,5 +14,7 @@ En effet, le principe est de glisser des intrus (couleur différente etc) et de 
 * Version 1.0.0a : Initialisation, premier commit
 * Version 1.0.1a : Première version de test, en béta
 * Version 1.1.0a : Version finale ! :)
+* Version 2.0.1a : Ajout de la page de score
+
 
 Julien Attard & Lucas Abadie
